@@ -1,0 +1,140 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: rgb(22, 21, 21);
+    text-align: center;
+}
+header {
+    height: 100px;
+    background: #FF9E66;
+    font-size: 150%;
+    color: #FF3430;
+    padding: 20px;
+}
+
+nav {
+
+  height: 50px;
+  background-color: #FC701E;
+  color: black;
+}
+
+a {
+
+  text-decoration: none;
+  color: black;
+  font-size: xx-large;
+  word-spacing: 25px;
+}
+article {
+    background: #FCBC35;
+    color: #FF3430;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+footer {
+    background: #FF9E66;
+    color: #FF3430;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover  */
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+
+  
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    background-image: url(mocha.jpg);
+    background-size: cover;
+
+  }
+
+    .flat  {
+
+    background-image: url(flat.jpg);
+  }
+
+  .dolce  {
+
+    background-image: url(dolce.jpg);
+  }
+
+ 
+  
+ 
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #FC701E;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+  
+
+    @media screen and (max-width: 500px) {
+
+        .flip-card {
+
+            width: 250px;
+            height: 300px;
+            font-size: 10px; }
+                       
+    }
+
+    
+
+
+    @media screen and (max-width:700px) {
+
+        header {
+
+            font-size: small;
+            
+        }
+    }
+
+   
+
+   
+
+
